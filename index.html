@@ -1,20 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P-ticket</title>
     <link rel="stylesheet" href="./styles.css">
+    <!-- Tailwind and Daisy UI Links-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/b7b65a90b2.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-    
 
+<body class=" lg:max-w-[1171px] mx-auto">
 
+    <header>
+        <!-- nav bar  -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 raleway">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-2xl font-bold realeway">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-6 raleway">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <a class="btn  border-green-200 bg-green-100 text-[#1DD100] hover:bg-transparent">Bus <img
+                        src="./images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+        <!-- banner section -->
+        <section class="mx-auto mt-28">
+            <div class="bg-[url('images/banner.png')] bg-no-repeat bg-center h-[550px] space-y-8 text-center">
+                <h3 class="text-center text-6xl text-white raleway font-bold max-h-screen pt-36">End-to-End Travel with
+                    <br> <span class="text-[#1DD100]">P-Paribahan</span>
+                </h3>
+                <p class="inter text-white text-center max-h-screen">Yes, you can run unit tests and view the results
+                    directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn text-black font-bold raleway bg-[#1DD100] border-0">Buy Tickets</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- best offer section -->
 
+        <section class=" mt-32 flex flex-col lg:flex-row justify-between gap-10 ">
+            <!-- first coupon -->
+            <div
+                class="flex bg-[#FFBF0F] items-center justify-around lg:justify-between px-10 lg:px-20 lg:flex-1 rounded-xl">
+                <div class=>
+                    <h3 class="inter font-extrabold text-3xl">15% OFF</h3>
+                    <p class="inter font-semibold">on your next purchase</p>
+                    <p class="inter">use by january 2024</p>
+                </div>
+                <div>
+                    <img src="./images/cupon-devider.png" alt="">
+                </div>
 
+                <div>
+                    <h3 class="raleway font-bold text-2xl">NEW15</h3>
+                    <p class="raleway">coupon code</p>
+                </div>
+            </div>
+            <!--second coupon  -->
+            <div
+                class="flex bg-[#F78C9C] items-center justify-around lg:justify-between px-10 lg:px-20 lg:flex-1 rounded-xl">
+                <div>
+                    <h3 class="inter font-extrabold text-3xl">20% OFF</h3>
+                    <p class="inter font-semibold">on your next purchase</p>
+                    <p class="inter">use by january 2024</p>
+                </div>
+                <div class="">
+                    <img src="./images/cupon-devider.png" alt="">
+                </div>
 
+                <div>
+                    <h3 class="raleway font-bold text-2xl">Couple 20</h3>
+                    <p class="raleway">Coupon Code</p>
+                </div>
+            </div>
+        </section>
+        <!-- all offer button -->
+        <div class="text-center mt-14"><button class="btn px-10 border-[#1DD100] bg-transparent text-[#1DD100]">See All
+                Affers</button>
+        </div>
+        <!-- form and ticket section -->
+        <section class="mt-20">
+            <div class="pt-20">
+                <div>
+                    <h3 class="text-2xl font-extrabold inter text-black text-center">P.H Paribahan</h3>
+                    <p class="inter text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div>
+                <div>
+                    <div>
+                        <div><img src="./images/bus-logo.png" alt=""></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 
     <script src="./scripts.js"></script>
 </body>
+
 </html>
