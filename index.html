@@ -58,7 +58,8 @@
                 </h3>
                 <p class="inter text-white text-center max-h-screen">Yes, you can run unit tests and view the results
                     directly within the app. The integrated testing features allow for a streamlined .</p>
-                <button class="btn text-black font-bold raleway bg-[#1DD100] border-0">Buy Tickets</button>
+                <button class="btn text-black font-bold raleway bg-[#1DD100] border-0"> <a href="#form-section">Buy
+                        Tickets</a></button>
             </div>
         </section>
     </header>
@@ -106,7 +107,7 @@
                 Offers</button>
         </div>
         <!-- form and ticket section -->
-        <section class="mt-20 border-t-2 border-green-600 border-solid rounded-3xl">
+        <section class="mt-20 border-t-2 border-green-600 border-solid rounded-3xl" id="form-section">
             <div class="pt-20">
                 <div class="space-y-2">
                     <h3 class="text-2xl font-extrabold inter text-black text-center">P.H Paribahan</h3>
@@ -328,8 +329,8 @@
                     <div class="bg-gray-100 rounded-xl space-y-4 lg:mt-6 p-8">
                         <div class="space-y-5">
                             <div class="flex justify-between">
-                                <div class="inter font-semibold">Seat<span
-                                        class="bg-[#1DD100] rounded-lg text-center" id="selected-seats">0</span>
+                                <div class="inter font-semibold">Seat<span class="bg-[#1DD100] rounded-lg text-center"
+                                        id="selected-seats">0</span>
                                 </div>
                                 <div class="inter font-semibold">Class</div>
                                 <div class="inter font-semibold">Price</div>
@@ -345,12 +346,14 @@
                         <!-- costs section dynamically changeable -->
                         <div class="flex justify-between">
                             <p class="inter font-semibold">Total Price</p>
-                            <p class="inter font-semibold">BDT <span id="total-price"class="">0</span></p>
+                            <p class="inter font-semibold">BDT <span id="total-price" class="">0</span></p>
                         </div>
                         <div class="flex relative">
-                            <input type="text" class="p-4 border-0 rounded-lg flex-1" placeholder="Have any coupon?" id="coupon-field">
+                            <input type="text" class="p-4 border-0 rounded-lg flex-1" placeholder="Have any coupon?"
+                                id="coupon-field">
                             <div class="text-center flex items-center"><button
-                                    class="btn bg-[#1DD100] absolute end-2 lg:w-32 text-white" id="apply-btn" disabled>Apply</button></div>
+                                    class="btn bg-[#1DD100] absolute end-2 lg:w-32 text-white" id="apply-btn"
+                                    disabled>Apply</button></div>
                         </div>
                         <div class="flex justify-between">
                             <p class="inter font-semibold">Grand Total</p>
@@ -366,19 +369,33 @@
                         </div>
                         <div class="flex flex-col gap-3">
                             <label for="phone" class="inter font-semibold">Phone Number*</label>
-                            <input type="tel" name="phone" class="border-2 border-gray-200 rounded-lg p-3"
-                                placeholder="Enter your phone number" required>
+                            <input type="number" name="phone" class="border-2 border-gray-200 rounded-lg p-3"
+                                placeholder="Enter your phone number" required id="phone-field">
                         </div>
                         <div class=" flex flex-col gap-3">
                             <label for="email" class="inter font-semibold">Email ID</label>
                             <input type="email" class="border-2 border-gray-200 rounded-lg p-3"
                                 placeholder="Enter your email">
                         </div>
-                        <button class="btn bg-[#1DD100] w-full text-white text-lg">Next</button>
+                        <button class="btn bg-[#1DD100] w-full text-white text-lg" disabled id="next-btn">Next</button>
                     </div>
                     <div class="flex justify-around pt-5">
                         <a href="" class="opacity-90 underline">Terms and Condition</a>
                         <a href="" class="opacity-90 underline">Cancellation Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- The button to open modal -->
+            <a href="#my_modal_8" class="btn">open modal</a>
+            <!-- Put this part before </body> tag -->
+            <div class="modal" role="dialog" id="my_modal_8">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">This modal works with anchor links</p>
+                    <div class="modal-action">
+                        <a href="#" class="btn">Yay!</a>
                     </div>
                 </div>
             </div>

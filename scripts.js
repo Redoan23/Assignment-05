@@ -32,6 +32,10 @@ for (const seat of seats) {
 
                 const price = document.getElementById('main-price').innerText
                 sum = sum + parseInt(price);
+
+                if (!isNaN(phoneField.value)) {
+                    document.getElementById('next-btn').removeAttribute('disabled')
+                }
             }
 
             count = seatArray.length
@@ -42,37 +46,48 @@ for (const seat of seats) {
 
             let totalPrice = document.getElementById('total-price')
             totalPrice.innerText = sum;
+
+            const grandTotal = document.getElementById('grand-total-price')
+            grandTotal.innerText = sum;
+
         }
+        else{prompt('you are out of your selection limit')}
     })
 }
 
 document.getElementById('coupon-field').addEventListener('keyup', function (e) {
     if (e.target.value === 'NEW15' || e.target.value === 'Couple 20') {
-        document.getElementById('apply-btn').removeAttribute("disabled")
+        if (count === 4) {
+            document.getElementById('apply-btn').removeAttribute("disabled")
+        }
     }
     else { document.getElementById('apply-btn').setAttribute("disabled", true) }
+
+
+    document.getElementById('apply-btn').addEventListener('click', function () {
+        const btn = document.getElementById('apply-btn');
+        const coupon = document.getElementById('coupon-field');
+        let couponValue = coupon.value;
+        const grandTotal = document.getElementById('grand-total-price');
+        if (couponValue === 'NEW15') {
+            let off = sum - (sum * 15 / 100);
+            grandTotal.innerText = Math.round(off);
+            coupon.classList.add('hidden');
+            btn.classList.add('hidden');
+
+        }
+        else if (couponValue === 'Couple 20') {
+            let off = sum - (sum * 20 / 100);
+            grandTotal.innerText = Math.round(off);
+            coupon.classList.add('hidden');
+            btn.classList.add('hidden');
+        }
+
+    })
 })
 
+const phoneField = document.getElementById('phone-field');
 
-
-
-document.getElementById('apply-btn').addEventListener('click', function () {
-    const btn = document.getElementById('apply-btn');
-    const coupon = document.getElementById('coupon-field');
-    let couponValue = coupon.value;
-    const grandTotal = document.getElementById('grand-total-price');
-    if (couponValue === 'NEW15') {
-        let off = sum - (sum * 15 / 100);
-        grandTotal.innerText = Math.round(off);
-        coupon.classList.add('hidden');
-        btn.classList.add('hidden');
-
-    }
-    else if (couponValue === 'Couple 20') {
-        let off = sum - (sum * 20 / 100);
-        grandTotal.innerText = Math.round(off);
-        coupon.classList.add('hidden');
-        btn.classList.add('hidden');
-    }
-
-})
+function show() {
+  
+}
