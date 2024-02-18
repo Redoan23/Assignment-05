@@ -52,7 +52,7 @@
         </div>
         <!-- banner section -->
         <section class="mx-auto mt-28">
-            <div class="bg-[url('images/banner.png')] bg-no-repeat bg-center h-[550px] space-y-8 text-center">
+            <div class="bg-[url('images/banner.png')] bg-no-repeat bg-cover h-[550px] space-y-8 text-center">
                 <h3 class="text-center text-6xl text-white raleway font-bold max-h-screen pt-36">End-to-End Travel with
                     <br> <span class="text-[#1DD100]">P-Paribahan</span>
                 </h3>
@@ -106,7 +106,7 @@
                 Offers</button>
         </div>
         <!-- form and ticket section -->
-        <section class="mt-20">
+        <section class="mt-20 border-t-2 border-green-600 border-solid rounded-3xl">
             <div class="pt-20">
                 <div class="space-y-2">
                     <h3 class="text-2xl font-extrabold inter text-black text-center">P.H Paribahan</h3>
@@ -126,7 +126,7 @@
                             <div class="bg-green-100 px-8 py-4 rounded-xl flex">
                                 <img src="./images/seat-green.png" alt="">
                                 <!-- dynamic sit numbers  -->
-                                <p class="inter text-[#1DD100]"><span>40</span>seats left</p>
+                                <p class="inter text-[#1DD100]"><span id="total-seats">40</span> seats left</p>
                             </div>
                         </div>
                         <div class="p-6 space-y-8 bg-gray-100 rounded-xl">
@@ -154,7 +154,7 @@
                     <div class="hidden lg:block"> <img src="./images/info-devider.png" alt=""></div>
                     <div class="space-y-2">
                         <div class="flex justify-center"><img src="./images/fare.png" alt=""></div>
-                        <p class="raleway font-bold text-xl text-center"><span>550</span> Taka</p>
+                        <p class="raleway font-bold text-xl text-center"><span id="main-price">550</span> Taka</p>
                         <p class="raleway text-center">Per Seat</p>
                     </div>
                 </div>
@@ -184,137 +184,137 @@
                     <div class="pt-28 flex justify-center">
                         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
                             <!-- div*44.bg-gray-50.text-center.w-28.h-14.p-2>p{A} -->
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 ">
-                                <p class="text-center">A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="A1">
+                                <p class="text-center">A1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="A2">
+                                <p>A2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="A3">
+                                <p>A3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="A4">
+                                <p>A4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="B1">
+                                <p>B1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="B2">
+                                <p>B2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="B3">
+                                <p>B3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="B4">
+                                <p>B4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="C1">
+                                <p>C1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="C2">
+                                <p>C2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="C3">
+                                <p>C3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="C4">
+                                <p>C4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="D1">
+                                <p>D1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="D2">
+                                <p>D2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="D3">
+                                <p>D3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="D4">
+                                <p>D4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="E1">
+                                <p>E1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="E2">
+                                <p>E2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="E3">
+                                <p>E3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="E4">
+                                <p>E4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="F1">
+                                <p>F1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="F2">
+                                <p>F2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="F3">
+                                <p>F3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="F4">
+                                <p>F4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="G1">
+                                <p>G1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="G2">
+                                <p>G2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="G3">
+                                <p>G3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="G4">
+                                <p>G4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="H1">
+                                <p>H1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="H2">
+                                <p>H2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="H3">
+                                <p>H3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="H4">
+                                <p>H4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="I1">
+                                <p>I1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="I2">
+                                <p>I2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="I3">
+                                <p>I3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="I4">
+                                <p>I4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="J1">
+                                <p>J1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="J2">
+                                <p>J2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="J3">
+                                <p>J3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="J4">
+                                <p>J4</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="K1">
+                                <p>K1</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="K2">
+                                <p>K2</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="K3">
+                                <p>K3</p>
                             </div>
-                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2">
-                                <p>A</p>
+                            <div class="bg-gray-50 text-center rounded-xl w-28 h-14 p-2 seats" id="K4">
+                                <p>K4</p>
                             </div>
                         </div>
                     </div>
@@ -328,17 +328,12 @@
                     <div class="bg-gray-100 rounded-xl space-y-4 lg:mt-6 p-8">
                         <div class="space-y-5">
                             <div class="flex justify-between">
-                                <div class="inter font-semibold">Seat <span id="selected-sit"
-                                        class="bg-[#1DD100] rounded-sm">30</span></div>
+                                <div class="inter font-semibold">Seat <span class="bg-[#1DD100] rounded-sm"
+                                        id="selected-seats">0</span></div>
                                 <div class="inter font-semibold">Class</div>
                                 <div class="inter font-semibold">Price</div>
                             </div>
                             <div class="border-dashed border-b-2 border-gray-300"></div>
-                            <div class="flex justify-between">
-                                <div class="inter">C2</div>
-                                <div class="inter">Economy</div>
-                                <div class="inter">550</div>
-                            </div>
                             <div class="flex justify-between">
                                 <div class="inter">C2</div>
                                 <div class="inter">Economy</div>
@@ -349,7 +344,7 @@
                         <!-- costs section dynamically changeable -->
                         <div class="flex justify-between">
                             <p class="inter font-semibold">Total Price</p>
-                            <p class="inter font-semibold">BDT <span>0</span></p>
+                            <p class="inter font-semibold">BDT <span id="total-price">0</span></p>
                         </div>
                         <div class="flex relative">
                             <input type="text" class="p-4 border-0 rounded-lg flex-1" placeholder="Have any coupon?">
@@ -358,7 +353,7 @@
                         </div>
                         <div class="flex justify-between">
                             <p class="inter font-semibold">Grand Total</p>
-                            <p class="inter font-semibold">BDT <span>0</span></p>
+                            <p class="inter font-semibold">BDT <span id="grand-total-price">0</span></p>
                         </div>
                     </div>
                     <!-- information form -->
