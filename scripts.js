@@ -8,6 +8,9 @@ let sum = 0;
 for (const seat of seats) {
     seat.addEventListener('click', function () {
         let id = seat.innerText
+
+        // price amount functions based on conditions
+
         if (remaining > 36) {
             if (seat.classList.contains('bg-gray-100')) {
                 document.getElementById(id).classList.remove('bg-gray-100')
@@ -45,9 +48,7 @@ for (const seat of seats) {
             const grandTotal = document.getElementById('grand-total-price')
             grandTotal.innerText = sum;
 
-
-
-
+            // Apply button disabled enabled functions
             document.getElementById('coupon-field').addEventListener('keyup', function (e) {
                 if (count === 4) {
                     if (e.target.value === 'NEW15' || e.target.value === 'Couple 20') {
@@ -58,42 +59,45 @@ for (const seat of seats) {
 
                 else { document.getElementById('apply-btn').setAttribute("disabled", true) }
 
+            })
+                // total price based on coupon apply conditions
+
                 document.getElementById('apply-btn').addEventListener('click', function () {
+
                     const btn = document.getElementById('apply-btn');
                     const coupon = document.getElementById('coupon-field');
                     let couponValue = coupon.value;
                     const grandTotal = document.getElementById('grand-total-price');
+
                     if (couponValue === 'NEW15') {
                         let off = sum - (sum * 15 / 100);
                         grandTotal.innerText = Math.round(off);
                         coupon.classList.add('hidden');
                         btn.classList.add('hidden');
-
                     }
+
                     else if (couponValue === 'Couple 20') {
                         let off = sum - (sum * 20 / 100);
                         grandTotal.innerText = Math.round(off);
                         coupon.classList.add('hidden');
                         btn.classList.add('hidden');
                     }
-
                 })
+            
+
+            // Next buttons disabled/enabled conditions
+
+            let button = document.getElementById('next-btn')
+            document.getElementById('phone-field').addEventListener('keyup', function (event) {
+                if (event.target.value.length > 0 && event.target.value.length < 11) {
+                    button.removeAttribute('disabled')
+                }
+                else { button.setAttribute('disabled', true) }
             })
-
-
-
-
-
         }
+
         else { alert('You cannot choose over 4 seats at a time.') }
     })
 }
 
-let button = document.getElementById('next-btn')
-document.getElementById('phone-field').addEventListener('keyup', function (event) {
-    if (  event.target.value.length>0 && event.target.value.length<11) {
-        button.removeAttribute('disabled')
-    }
-    else{ button.setAttribute('disabled', true)}
-})
 
