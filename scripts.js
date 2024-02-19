@@ -55,11 +55,18 @@ for (const seat of seats) {
 
                         document.getElementById('apply-btn').removeAttribute("disabled")
                     }
+
+                    else {alert('invalid coupon')
+                
+                    document.getElementById('apply-btn').setAttribute('disabled', true)
+                }
                 }
 
-                else { document.getElementById('apply-btn').setAttribute("disabled", true) }
+                else {alert('invalid coupon')}
 
             })
+
+
                 // total price based on coupon apply conditions
 
                 document.getElementById('apply-btn').addEventListener('click', function () {
